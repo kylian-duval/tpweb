@@ -1,0 +1,7 @@
+192.168.65.227
+
+use:pi
+mdp:raspberry
+
+use: root
+mdp:raspberry
