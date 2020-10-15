@@ -1,0 +1,48 @@
+#entete, #menu, #contenu, #footer {        /*pour retirer tout les écart entre chaque div*/
+    padding:1px 0;
+    }
+    #entete {                               /*pour l'entete */
+    background-color:red;
+    text-align:center;
+    background-image:url(images/london-2371493_960_720\ welcome.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: -8;
+    min-height:350px;
+    
+    }
+    #main {                 /* s'occupe de la mise en page de mais information personel*/        
+    /*max-width: 900px;*/
+    margin:auto;
+    margin: -8;
+    }
+    #menu  {                        /*s'occupe du fond de mais information personel*/
+    float:left;
+    width:203px;
+    background-color:#212883;
+    min-height:512px;
+    color: white;
+    margin: -8;
+    margin-top: 0px;
+    
+    }
+    #contenu {                      /*s'occupe de tout la mise en page de tout le contenu "espérience profécinelle + formation+ compétence"*/
+    margin-left:245px;
+    background-color:#ffffff;
+    padding-left: 300px;
+    margin: -8;
+    min-height:520px;
+    
+    }
+    #footer {                       /* s'occupe de la mise en page de la bas de la page */
+    clear:both;
+    background-color:red;
+    text-align:center;
+    background-image:url(images/london-2371493_960_720\ goodbye.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height:350px;
+    margin: -8;
+    }
