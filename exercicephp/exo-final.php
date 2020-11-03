@@ -40,6 +40,7 @@
     
     if(isset($_POST['deco'])){   
         session_destroy();
+        echo '<meta http-equiv="refresh" content="0">';
         
     }
 
