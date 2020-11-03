@@ -1,0 +1,19 @@
+DIV.baniere{
+    min-height: 300px;
+    background-image:url(image/teste3.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    margin: -7px;
+    
+}
+
+NAV{
+    position: absolute;
+    top: 350px;
+    left: 18;
+    width: 200px;
+    height: 460px;
+    background-color: rgb(127, 128, 129);
+    padding: 10px;
+}
