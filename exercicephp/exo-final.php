@@ -8,19 +8,12 @@
 </head>
 
 <body>
-        <input type="text" name="login">
-        <input type="text" name="mdp">
-        <input type="submit" value="conection" name="valide">
-        <input type="submit" value="Deconnexion" name="deco">
+
+
+
     <?php session_start();
     $nom = 'Julien';
     $password = '1234';
-
-    if(isset($_SESSION['login'])) {
-        echo 'bienvenue';
-    }else
-    {
-        
 
     if (isset($_POST['valide'])) {
         if ($_POST['login'] == $nom) {
@@ -30,14 +23,27 @@
         } else echo 'le login est inconnu. ';
     }
 
+    if(isset($_SESSION['login'])) {
+        echo 'bienvenue';
+        echo '<form action="" method="post"><input type="submit" value="Deconnexion" name="deco"></form>';
+
+    }else{
+
+        echo '<form action="" method="post">
+        <input type="text" name="login" placeholder="entrée le login">
+        <input type="text" name="mdp"placeholder="Enter le mots de passe">
+        <input type="submit" value="conection" name="valide" >
+        </form>';
+
+
+    }
     
     if(isset($_POST['deco'])){   
         session_destroy();
-        echo '<p><span> je suis déco </span></p>';
+        
     }
 
     highlight_file((__FILE__))
     ?>
 </body>
-
 </html>
